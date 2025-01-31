@@ -1,64 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chistes Divertidos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #ffeb3b;
-            padding: 50px;
-        }
-        .container {
-            max-width: 500px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            color: #ff5722;
-        }
-        p {
-            font-size: 18px;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>匿名墙</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
-        <h1>😂 Chistes Divertidos 😂</h1>
-        <p id="chiste">Haz clic en el botón para ver un chiste.</p>
-        <button onclick="mostrarChiste()">Nuevo Chiste</button>
+        <div class="card" onclick="location.href='confession.html'">
+            <h2>表白墙</h2>
+            <p>一个表达爱意和告白的空间，可以匿名或公开分享你的心意，与世界分享你的感受。</p>
+        </div>
+        <div class="card" onclick="location.href='friends.html'">
+            <h2>交友墙</h2>
+            <p>一个让人们结识新朋友、找到志同道合伙伴、扩大社交圈的地方。</p>
+        </div>
+        <div class="card" onclick="location.href='gossip.html'">
+            <h2>八卦墙</h2>
+            <p>发现和分享最新的八卦、传闻和社区趣闻，了解身边的热点话题。</p>
+        </div>
     </div>
-
-    <script>
-        const chistes = [
-            "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!",
-            "¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter!",
-            "¿Cuál es el animal más antiguo? La cebra, porque está en blanco y negro.",
-            "¿Qué le dice un gusano a otro gusano? Voy a dar una vuelta a la manzana.",
-            "Mamá, en el colegio me llaman Facebook. ¿Y tú qué les dices? ¡Me gusta!"
-        ];
-        
-        function mostrarChiste() {
-            const indice = Math.floor(Math.random() * chistes.length);
-            document.getElementById('chiste').innerText = chistes[indice];
-        }
-    </script>
 </body>
+
 </html>
